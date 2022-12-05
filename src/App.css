@@ -1,3 +1,9 @@
+html {
+  background-image: "../public/wave.svg";
+  background-color:#ededed;
+  width: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +20,96 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px;
+  background: linear-gradient(145deg, #313131, #292929);
+  box-shadow: 2px 2px 8px #272727, -2px -2px 8px #353535;
+  /* background-color: #282c34; */
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+}
+
+.input {
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
+  transition: 0.75s;
+}
+
+.input:focus {
+  border: 1px solid white;
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+  transition: 0.75s;
+}
+
+button {
+  color: #090909;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.75s;
+  box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
+  margin: 0.5%;
+}
+
+button:hover {
+  border: 1px solid white;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+.log-state {
+  color: #cdcdcd;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 1rem;
+  background: #292929;
+  border: 1px solid #0d0d0d;
+  transition: all 0.75s;
+  box-shadow: 2px 2px 20px #c5c5c5, -2px -2px 20px #ffffff;
+  margin: 5%;
+}
+
+.log-state:hover {
+  border: 1px solid #c5c5c5;
+  background: inherit;
+  border: 1px solid #292929;
+  color: #0d0d0d;
+}
+
+.log-state:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+.input-container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div {
+  justify-content: space-around;
+}
+
+label {
+  margin-top: 5%;
+  font-weight: bold;
+  color: rgb(14, 14, 14);
 }
 
 .App-link {
